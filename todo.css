@@ -180,10 +180,12 @@ small{
     font-size: 13px;
 }
 
-#duedate{
-    min-height: 42px;
-    color: #4b4b4b;
+
+#duedate::-webkit-calendar-picker-indicator{
+    opacity: 1;
+    cursor: pointer;
 }
+
 @media (max-width: 768px){
 
     body{
@@ -255,9 +257,6 @@ small{
         gap: 8px;
     }
 
-    #duedate{
-        appearance: auto;
-        -webkit-appearance: auto;
-    }
+    
 
 }
