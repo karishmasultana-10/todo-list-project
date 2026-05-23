@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<html>
+    
+    <body>
+        <div id="container">
+            <h1>My Todo List</h1>
+            <input type="search"  id="tasksearch" placeholder="Search Task Here">
+            <input type="text" id="todotask" placeholder="Enter your task">
+            <input type="date" id="duedate" placeholder="Enter due date">
+            <button id="addtask" onclick="addTask()">Add Task</button>
+            <ul id="mylist"></ul>
+            <div class="taskbulk">
+                <span>
+                   <p id="taskcntr">Total Tasks:</p> 
+                </span>
+                
+                <button id="clearAll">Clear All</button>  
+            </div>
+            
+            <div class="filterbtns">
+                <button id="all">All</button>
+                <button id="completed">Completed</button>
+                <button id="pending">Pending</button>
+                <button id="clrcmpltd" style="display: none;">Clear Completed Tasks</button>
+            </div>
+            
+           
+        </div>
+        <script src="./alert.js"></script>
+    </body>
+
+</html>
