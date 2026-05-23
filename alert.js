@@ -58,7 +58,7 @@ function UILogic(task,index){
 
     // list.innerHTML+="<li>"+task+"</li>";{
 
-    spanelmnt.textContent=`${task.text} - Due  ${task.due}`;
+    spanelmnt.innerHTML=`${task.text}<br><small>Due: ${task.due}</small>`;
 
 
     // to display on the ui we are checking the status and applyig the class

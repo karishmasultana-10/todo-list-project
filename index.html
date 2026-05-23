@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="todo.css">
 </head>
 <html>
@@ -7,10 +8,13 @@
     <body>
         <div id="container">
             <h1>My Todo List</h1>
-            <input type="search"  id="tasksearch" placeholder="Search Task Here">
-            <input type="text" id="todotask" placeholder="Enter your task">
-            <input type="date" id="duedate" placeholder="Enter due date">
-            <button id="addtask" onclick="addTask()">Add Task</button>
+            <div class="inputbox">
+                <input type="search"  id="tasksearch" placeholder="Search Task Here">
+                <input type="text" id="todotask" placeholder="Enter your task">
+                <input type="date" id="duedate" placeholder="Enter due date">
+                <button id="addtask" onclick="addTask()">Add Task</button> 
+            </div>
+            
             <ul id="mylist"></ul>
             <div class="taskbulk">
                 <span>

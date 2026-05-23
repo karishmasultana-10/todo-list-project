@@ -99,7 +99,7 @@ li:hover{
 
 }
 span{
-    word-break: break-all;
+    word-break: keep-all;
 }
 .dltbtn{
     background-color: #f4b6b6;
@@ -175,15 +175,33 @@ span{
     background-color: #ebb56f;
 }
 
+small{
+    color: #6f6f6f;
+    font-size: 13px;
+}
 @media (max-width: 768px){
 
+    body{
+        padding: 12px;
+        display: block;
+    }
+
     #container{
-        width: 90%;
-        padding: 20px;
+        width: 100%;
+        padding: 18px;
+        margin-top: 20px;
+        box-sizing: border-box;
     }
 
     h1{
         font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .inputbox{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     #tasksearch,
@@ -191,29 +209,45 @@ span{
     #duedate,
     #addtask{
         width: 100%;
-        margin: 8px 0;
+        margin: 0;
         box-sizing: border-box;
     }
 
+    #duedate{
+        font-size: 16px;
+    }
+
     li{
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        padding: 14px;
+        /* flex-direction: column;
+        align-items: flex-start; */
+    }
+
+
+    li span{
+        width: 100%;
+        flex: 1;
+        margin-right: 10px;
     }
 
     .btnbox{
-        width: 100%;
-        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .dltbtn,
+    .editbtn{
+        padding: 6px 10px;
+        font-size: 14px;
     }
 
     .taskbulk{
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
     .filterbtns{
         flex-wrap: wrap;
+        gap: 8px;
     }
 
 }
